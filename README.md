@@ -6,7 +6,7 @@ This application is made by the
 
 - [Overview](#overview)
   - [Features](#features)
-  - [Screenshot][def]
+  - [Screenshot][./screenshot/desktop.png]
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,12 +25,12 @@ The following are the features of the All Countries App:
 
 ### Screenshot
 
-[](./screenshot/desktop.png)
-[](./screenshot/search.png)
-[](./screenshot/nothing-found.png)
-[](./screenshot/result.png)
-[](./screenshot/mobile.png)
-[](./screenshot/mobile-result.png)
+![][./screenshot/desktop.png]
+![][./screenshot/search.png]
+![][./screenshot/nothing-found.png]
+![][./screenshot/result.png]
+![][./screenshot/mobile.png]
+![][./screenshot/mobile-result.png]
 
 ### Links
 
@@ -53,3 +53,11 @@ The following are the features of the All Countries App:
 # Appreciation
 
 My deep appreciation to https://restcountries.com/. This website provided an easy acceess world information API that really helps me to build this project.
+
+
+[./screenshot/desktop.png]: ./screenshot/desktop.png
+[./screenshot/search.png]: ./screenshot/search.png
+[./screenshot/nothing-found.png]: ./screenshot/nothing-found.png
+[./screenshot/result.png]: ./screenshot/result.png
+[./screenshot/mobile.png]: ./screenshot/mobile.png
+[./screenshot/mobile-result.png]: ./screenshot/mobile-result.png
