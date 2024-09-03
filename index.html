@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Miks Dev | All Countries App with API</title>
+</head>
+
+<body>
+
+    <!-- main content for a specific country -->
+    <main class="container">
+        <!-- header -->
+        <header>
+            <h3>All Countries App with API</h3>
+            <!-- search section -->
+            <section class="search-wrapper">
+                <input type="search" name="search" id="search" placeholder="Search a country" autocomplete="off">
+                <button class="search-btn-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </button>
+                <div class="search-suggestions">
+                    <ul>
+                        <!-- <li>Russia</li>
+                        <li>China</li>
+                        <li>Germany</li>
+                        <li>Japan</li> -->
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <!-- results -->
+        <div class="all-search-results">
+            <section class="nothing-found">
+                <p>No search results found</p>
+                <img src="./images/No-results-found.png" alt="no result found img">
+            </section>
+            <section class="result-section">
+                <!--  content section -->
+                <div class="img-container">
+                    <img src="./images/Flag_of_the_Philippines.svg.png" alt="">
+                </div>
+    
+                <!-- search results -->
+                <article class="search-result">
+                    <div class="common-name">
+                        <span>Common Name</span>
+                        <p>Philippines</p>
+                    </div>
+                    <div class="official-name">
+                        <span>Official Name</span>
+                        <p>Republic of the Philippines</p>
+                    </div>
+                    <div class="capital">
+                        <span>Capital</span>
+                        <p>Manila</p>
+                    </div>
+                    <div class="language">
+                        <span>Languages</span>
+                        <p>Filipino, English</p>
+                    </div>
+                    <div class="population">
+                        <span>Population</span>
+                        <p>109581085</p>
+                    </div>
+                    <div class="currency">
+                        <span>Currencies</span>
+                        <p>Philippine peso</p>
+                    </div>
+                    <div class="land-area">
+                        <span>Land Area</span>
+                        <p>342353</p>
+                    </div>
+                    <div class="continent">
+                        <span>Continents</span>
+                        <p>Asia</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
