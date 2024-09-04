@@ -4,6 +4,7 @@ const searchInput = document.getElementById('search');
 const nothingFound = document.querySelector('.nothing-found');
 const resultSection = document.querySelector('.result-section');
 const searchBtn = document.querySelector('.search-btn-wrapper');
+const searchSuggestions = document.querySelector('.search-suggestions');
 const ul = document.querySelector('.search-suggestions ul');
 
 // store the API
@@ -43,11 +44,12 @@ function searchResults() {
     searchInput.addEventListener('input', function(e) {
         
         match = 0;
-
+        
         countriesData.forEach(function(country){
             console.log(e.target.value)
             if (match < 7 && country.commonName.toString().toLowerCase().includes(e.target.value.toString().toLowerCase())) {
                 match++;
+                searchSuggestions.style.opacity = 1;
                 
                 const li = document.createElement('li');
                 li.textContent = country.commonName;
@@ -55,20 +57,24 @@ function searchResults() {
                 searchBtn.addEventListener('click', function() {
                     searchCountry();
                     ul.innerHTML = '';
+                    searchSuggestions.style.opacity = 0;
                 })
                 
                 li.addEventListener('click', function(e) {
                     ul.innerHTML = '';
+                    searchSuggestions.style.opacity = 0;
                     searchInput.value = e.target.textContent;
                 })
             } else if (match <= 0) {
                 ul.innerHTML = '';
+                searchSuggestions.style.opacity = 0;
             }
             
         })
         console.log(typeof searchInput.value);
         if (e.target.value === '') {
             ul.innerHTML = '';
+            searchSuggestions.style.opacity = 0;
         } 
         
       
