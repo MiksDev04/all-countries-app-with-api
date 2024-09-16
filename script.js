@@ -17,7 +17,6 @@ fetch("https://restcountries.com/v3.1/all")
 
 function processAPI(obj) {
    
-    console.log(obj[0])
     
     countriesData = obj.map( o => {
         return {
@@ -39,14 +38,11 @@ function searchResults() {
     
     // store the suggestion list
     let match = 0; // if there's a match in the data.
-    console.log(countriesData)
     searchInput.addEventListener('input', function(e) {
         
         match = 0;
         countriesData.sort((a, b) => a.commonName.localeCompare(b.commonName));
-        console.log(countriesData[0])
         countriesData.forEach(function(country){
-            console.log(e.target.value)
             if (match < 7 && country.commonName.toString().toLowerCase().startsWith(e.target.value.toString().toLowerCase())) {
                 match++;
                 searchSuggestions.style.opacity = 1;
